@@ -1,0 +1,144 @@
+
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+body {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  background-color: #f5f7fb;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background: #f5f7fb;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.logo small {
+  font-size: 14px;
+  color: gray;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 30px;
+  color: black;
+  font-weight: 500;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+nav a.cart {
+  font-size: 14px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 50px 80px;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.black {
+  color: black;
+}
+
+.orange {
+  color: #ff7a1a;
+}
+
+.hero-text p {
+  color: gray;
+  font-size: 16px;
+  max-width: 500px;
+  margin-top: 15px;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: right;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* Our Plants Section */
+.plants {
+  padding: 50px 80px;
+}
+
+.plants-box {
+  border: 2px solid #7ac3f2;
+  border-radius: 10px;
+  padding: 30px;
+  background: white;
+}
+
+.plants-box h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin-top: 0;
+}
+
+.plants-box p {
+  color: gray;
+  font-size: 16px;
+  max-width: 600px;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .hero-image {
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .plants {
+    padding: 30px 20px;
+  }
+}
