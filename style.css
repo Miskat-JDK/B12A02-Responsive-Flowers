@@ -1,7 +1,4 @@
-
-
-
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -84,7 +81,6 @@ body {
 
 /* Plants Section */
 .plants-section {
-    border: 2px solid #00a;
     margin: 40px;
     padding: 20px;
     text-align: center;
@@ -116,6 +112,8 @@ body {
     background: white;
     padding: 10px;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .product-card img {
@@ -140,19 +138,59 @@ body {
     border: none;
     cursor: pointer;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 .product-card button:hover {
     background: darkorange;
 }
 
+/* Extra Section */
+.extra-section {
+    padding: 50px;
+    background: #fff7f0;
+}
+
+.extra-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.extra-text {
+    flex: 1;
+}
+
+.extra-text h2 {
+    font-size: 28px;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.extra-text p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.extra-image {
+    flex: 1;
+    text-align: right;
+}
+
+.extra-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
-    .hero {
+    .hero, .extra-container {
         flex-direction: column;
         text-align: center;
     }
-    .hero-image {
+    .hero-image, .extra-image {
         text-align: center;
     }
 }
